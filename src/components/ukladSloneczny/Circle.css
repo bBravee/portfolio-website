@@ -1,0 +1,81 @@
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    display: inline-block;
+    position: absolute;background-image: url('../../assets/atom.png');
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+}
+
+.planet {
+    background: transparent;
+    border: 3px solid black;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%, -50%)rotate(0);
+    }
+    100% {
+        transform: translate(-50%, -50%)rotate(360deg);
+    }
+}
+
+.planet1 {
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planet2 {
+    width: 170px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planet3 {
+    width: 230px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.planet1::before {
+    width: 20px;
+    height: 20px;
+    /* bottom: 5px; */
+    left: 100px;
+    background: red;
+}
+
+.planet2::before {
+    width: 30px;
+    height: 30px;
+    right: 155px;
+    background-color: blueviolet;
+}
+
+.planet3::before {
+    width: 40px;
+    height: 40px;
+    /* right: 210px; */
+    bottom: 210px;
+    background-color: blueviolet;
+}
