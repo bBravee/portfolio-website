@@ -1,81 +1,132 @@
 .circle {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-span {
-    display: inline-block;
-    position: absolute;background-image: url('../../assets/atom.png');
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
+.js-container {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    border: 1px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.planet {
-    background: transparent;
-    border: 3px solid black;
-    animation: animate 10s linear infinite;
+.js-container > img  {
+    width: 50px;
+    height: 50px;
+    animation: js-spin 50000ms linear infinite;
 }
 
-@keyframes animate {
-    0%{
-        transform: translate(-50%, -50%)rotate(0);
+@keyframes js-spin {
+    0% {
+        transform: rotate(0deg) translate(250px) rotate(0deg);
     }
     100% {
-        transform: translate(-50%, -50%)rotate(360deg);
+        transform: rotate(360deg) translate(250px) rotate(-360deg);
     }
 }
 
-.planet1 {
-    width: 110px;
-    height: 110px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.planet2 {
-    width: 170px;
-    height: 170px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.planet3 {
-    width: 230px;
-    height: 230px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-span::before {
-    content: '';
+.npm-container {
     position: absolute;
-    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    border: 1px dashed black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.planet1::before {
-    width: 20px;
-    height: 20px;
-    /* bottom: 5px; */
-    left: 100px;
-    background: red;
+.npm-container > img  {
+    width: 50px;
+    height: 50px;
+    animation: npm-spin 50000ms linear infinite;
 }
 
-.planet2::before {
-    width: 30px;
-    height: 30px;
-    right: 155px;
-    background-color: blueviolet;
+@keyframes npm-spin {
+    0% {
+        transform: rotate(0deg) translate(200px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(200px) rotate(-360deg);
+    }
 }
 
-.planet3::before {
-    width: 40px;
-    height: 40px;
-    /* right: 210px; */
-    bottom: 210px;
-    background-color: blueviolet;
+.react-container {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 1px dashed black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.react-container > img  {
+    width: 50px;
+    height: 50px;
+    animation: react-spin 50000ms linear infinite;
+}
+
+@keyframes react-spin {
+    0% {
+        transform: rotate(0deg) translate(150px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(150px) rotate(-360deg);
+    }
+}
+
+.git-container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px dashed black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.git-container > img  {
+    width: 50px;
+    height: 50px;
+    transform: translateX(100px);
+    animation: git-spin 50000ms linear infinite;
+}
+
+.git-container > img:nth-of-type(2)  {
+    width: 50px;
+    height: 50px;
+    /* transform: translateX(-125px); */
+    animation: git-spin2 50000ms linear infinite;
+}
+
+@keyframes git-spin2 {
+    0% {
+        transform: rotate(0deg) translateY(-100px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateY(-100px) rotate(-360deg);
+    }
+}
+
+@keyframes git-spin {
+    0% {
+        transform: rotate(0deg) translateY(125px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateY(125px) rotate(-360deg);
+    }
+}
+
+
+
+
