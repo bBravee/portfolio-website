@@ -1,10 +1,12 @@
 import './App.css';
-import Circle from './components/ukladSloneczny/Circle';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import Home from './components/Home/Home.js';
 
 function App() {
   return (
     <div className="App">
-      <Circle />
+      <Home/>
     </div>
   );
 }
