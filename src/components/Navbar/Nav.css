@@ -1,0 +1,15 @@
+.navbar-wrapper {
+    backdrop-filter: blur(15px) !important;
+    background-color: #1b1a2ea9 !important;
+    box-shadow: 0 10px 10px 0 rgba(9, 5, 29, .171) !important;
+}
+
+.navbar-collapse {
+    margin-right: 0 !important;
+    font-size: 1.1rem;
+    justify-content: flex-end !important;
+}
+
+.nav-link {
+    margin-right: 2rem;
+}
