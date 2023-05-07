@@ -3,7 +3,7 @@ body,
 #root {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
   background: rgb(14, 18, 18);
   background: linear-gradient(90deg, rgba(14, 18, 18, 1) 0%, rgba(0, 0, 0, 1) 27%, rgba(2, 0, 3, 1) 36%, rgba(63, 0, 113, 1) 100%);
 }

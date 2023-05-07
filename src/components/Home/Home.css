@@ -1,5 +1,5 @@
 .home-wrapper {
-    margin-top: 6rem;
+    margin-top: 13rem;
 }
 
 .left-col {
@@ -8,27 +8,13 @@
 
 .about-wrapper {
     text-align: left;
-    margin-bottom: 50px;
 }
 
 .header {
-    font-size: 4rem;
+    font-size: clamp(3rem, 6.5vw, 4rem);
     font-weight: bold;
     letter-spacing: .2rem;
 }
-
-@media (max-width: 768px) {
-    .header {
-        font-size: 4rem;
-    }
-}
-
-@media (min-width: 789px) and (max-width: 874px) {
-    .header {
-        font-size: 3.4rem;
-    }
-}
-
 
 .name-span {
     color: #50048f;
@@ -42,6 +28,13 @@
 p {
     font-size: 1.4rem;
     color: #6c757d;
+}
+
+@media (max-width: 575px) {
+    .img-col {
+        flex: 0 0 auto;
+        width: 100%;
+    }
 }
 
 .programmer-image {
@@ -71,35 +64,16 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    padding-top: 16rem;
 }
 
 .introduce-wrapper>h1 {
     color: #50048f;
     font-weight: bold;
-    font-size: 4rem;
+    /* font-size: 4rem; */
+    font-size: clamp(2.6rem, 6.5vw, 4rem);
     margin-bottom: 2.8rem;
 }
-
-@media (max-width: 360px) {
-    .introduce-wrapper>h1 {
-        font-size: 2.2rem;
-    }
-}
-
-@media (min-width: 361px) and (max-width: 430px) {
-    .introduce-wrapper>h1 {
-        font-size: 2.5rem;
-    }
-}
-
-@media (min-width: 431px) and (max-width: 600px) {
-    .introduce-wrapper>h1 {
-        font-size: 3rem;
-    }
-}
-
-
 
 .introduce-span {
     color: white;
@@ -117,4 +91,53 @@ p {
         flex: 0 0 auto !important;
         width: 85% !important;
     }
+}
+
+.socials-wrapper {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9rem;
+    margin-bottom: 150px;
+}
+
+.socials-wrapper>h1 {
+    color: #50048f;
+    font-weight: bold;
+    font-size: clamp(2.6rem, 6.5vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.socials-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-left: 0;
+    margin-top: 2rem;
+}
+
+.socials-item {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    color: #50048f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.socials-item:hover {
+    box-shadow:
+        0 0 10px 5px #fff,
+        0 0 20px 10px #F900BF,
+        0 0 30px 15px #9900F0;
+}
+
+.socials-icon {
+    font-size: 1.2rem;
 }
