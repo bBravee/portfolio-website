@@ -1,0 +1,7 @@
+.projects-wrapper {
+    padding-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

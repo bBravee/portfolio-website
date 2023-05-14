@@ -110,6 +110,13 @@ p {
     margin-bottom: 1rem;
 }
 
+@media (min-width: 0px) and (max-width: 575px) {
+    .introduce-column {
+        flex: 0 0 auto !important;
+        width: 85% !important;
+    }
+}
+
 .socials-list {
     list-style: none;
     display: flex;
