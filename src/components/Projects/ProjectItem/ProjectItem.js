@@ -1,20 +1,30 @@
-import { Col, Row, Image } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 
 import './ProjectItem.css';
 
-function ProjectItem({ imgUrl, title, description }) {
+
+
+function ProjectItem({ imgUrl, title, description, height }) {
+    const containerStyles = {
+        backgroundImage: `url(${imgUrl})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        borderRadius: '16',    
+        boxShadow: '0 4 30 rgba(0, 0, 0, 0.1)'
+    };
+    
     return (
-        <>
-            <Row className="project-item-row">
+        <Container style={containerStyles}>
+            <Row style={{ height: height }} className="project-item-row">
                 <Col lg={4}>
-                    <Image className="projects-image" src={imgUrl} />
                 </Col>
                 <Col lg={8}>
                     <h1>{title}</h1>
                     <p>{description}</p>
                 </Col>
             </Row>
-        </>
+        </Container>
     )
 }
 

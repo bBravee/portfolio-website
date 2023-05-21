@@ -4,3 +4,15 @@
     flex-direction: column;
     align-items: center;
 }
+
+.projects-main-row {
+    width: 60%;
+}
+
+.first-col-container {
+    height: 200px;
+}
+
+.second-col-container {
+    height: 100px;
+}
