@@ -1,7 +1,8 @@
 const projectsData = [
     [
         {
-            title: "Weather App",
+            id: '0',
+            title: "Weather Appisadasds",
             description: "An application that allows you to check the current weather.",
             badges: [
                 "react",
@@ -12,6 +13,7 @@ const projectsData = [
             height: 400
         },
         {
+            id: '1',
             title: "Workout App",
             description: "An application that aims to help people with their training.",
             badges: [
@@ -24,7 +26,7 @@ const projectsData = [
         },
     ],
     [
-        {
+        {   id: '2',
             title: "Workout App",
             description: "An application that aims to help people with their training.",
             badges: [
@@ -36,6 +38,7 @@ const projectsData = [
             height: 300
         },
         {
+            id: '3',
             title: "Weather App",
             description: "An application that allows you to check the current weather.",
             badges: [
@@ -46,7 +49,7 @@ const projectsData = [
             imgUrl: "https://images.unsplash.com/photo-1682685795557-976f03aca7b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
             height: 380
         },
-        {
+        {   id: '4',
             title: "Workout App",
             description: "An application that aims to help people with their training.",
             badges: [
@@ -60,4 +63,4 @@ const projectsData = [
     ]
 ];
 
-export default projectsData;
+export const data = projectsData;

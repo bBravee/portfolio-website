@@ -9,7 +9,6 @@ function NavBar() {
     const brand = "<JK/>"
     return (
         <>
-
             <Navbar className="navbar-wrapper fixed-top" collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="#home">{brand}</Navbar.Brand>
