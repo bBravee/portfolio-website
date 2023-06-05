@@ -1,8 +1,29 @@
 .project-details-wrapper {
-    padding-top: 25%;
+    padding-top: 150px;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .project-details-image {
-    width: 800px;
-    height: 500px;
+    height: auto;
+    max-width: 55%;
+    /* border-radius: 15px; */
+}
+
+.project-details-title {
+    padding: 3.4rem 0;
+    color: white;
+    font-size: clamp(3rem, 6.5vw, 3rem);
+    font-weight: bold;
+}
+
+.project-details-description {
+    width: 50%;
+}
+
+.pd-button {
+    width: 10rem;
 }
