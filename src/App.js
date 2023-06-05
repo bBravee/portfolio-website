@@ -17,7 +17,7 @@ function App() {
         {
             id: 0,
             title: "Weather App",
-            description: "An application that allows you to check the current weather.",
+            description: "WeatherApp is an application that allows you to check current weather with many details in choosen city. Using Weather app you can also check the 5-day weather forecast for any city that you serached for.",
             badges: [
                 "react",
                 "axios",
