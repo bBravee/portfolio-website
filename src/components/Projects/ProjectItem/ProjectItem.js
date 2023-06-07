@@ -1,11 +1,17 @@
 import { Col, Row, Container } from "react-bootstrap";
+import { useSpring, animated } from 'react-spring';
 
 import { useParams } from 'react-router-dom';
 
 import './ProjectItem.css';
 
 function ProjectItem({ imgUrl, title, description, height, projectsData }) {
-    
+    const animation = useSpring({
+        opacity: 1,
+        from: { opacity: 0 },
+        config: { duration: 500 },
+    });
+
     const containerStyles = {
         backgroundImage: `url(${imgUrl})`,
         backgroundRepeat: 'no-repeat',
@@ -16,6 +22,7 @@ function ProjectItem({ imgUrl, title, description, height, projectsData }) {
     };
 
     return (
+        <animated.div style={animation}>
             <Container style={containerStyles} className="project-container">
                 <div className="overlay"></div>
                 <Row style={{ height: height }} className="project-item-row">
@@ -25,6 +32,7 @@ function ProjectItem({ imgUrl, title, description, height, projectsData }) {
                     </Col>
                 </Row>
             </Container>
+        </animated.div>
     )
 }
 
