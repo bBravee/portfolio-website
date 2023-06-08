@@ -9,7 +9,7 @@ function Projects({ projectsData }) {
     return (
         <Container fluid className="projects-wrapper">
             <Row className="projects-main-row">
-                <Col sm={12} md={6} className="projects-left-col">
+                <Col sm={12} md={6}>
                     {projectsData[0].map((item) => (
                         <Link to={`/projects/${item.id}`}>
                             <ProjectItem 

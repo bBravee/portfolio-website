@@ -25,5 +25,14 @@
 }
 
 .pd-button {
+    border-color: white;
     width: 10rem;
+    background-color: white;
+    color: #50048f;
+}
+
+.pd-button:hover {
+    border-color: #50048f;
+    color: white;
+    background-color: #50048f;
 }

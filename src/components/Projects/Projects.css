@@ -6,7 +6,33 @@
 }
 
 .projects-main-row {
-    width: 60%;
+    width: 60rem;
+}
+
+@media (min-width: 950px) and (max-width: 1050px) {
+    .projects-main-row {
+        width: 55rem;
+    }
+}
+
+@media (min-width: 815px) and (max-width: 950px) {
+    .projects-main-row {
+        width: 50rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 815px) {
+    .projects-main-row {
+        width: 45rem;
+    }
+}
+
+.projects-left-col {
+    width: 450px;
+}
+
+.projects-right-col {
+    width: 450px;
 }
 
 .first-col-container {
