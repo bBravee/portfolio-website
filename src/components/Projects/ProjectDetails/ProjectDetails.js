@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { Button, Image } from "react-bootstrap";
 import { useSpring, animated } from 'react-spring';
 
-import previewImg from '../../../assets/preview.jpg';
 import previewImg2 from '../../../assets/previewBig.jpg';
 
 import "./ProjectDetails.css";

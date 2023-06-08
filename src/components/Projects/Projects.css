@@ -27,6 +27,12 @@
     }
 }
 
+@media (min-width: 0px) and (max-width: 786px) {
+    .projects-main-row {
+        width: 100%;
+    }
+}
+
 .projects-left-col {
     width: 450px;
 }

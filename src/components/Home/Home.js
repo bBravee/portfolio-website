@@ -48,18 +48,26 @@ function Home() {
                     <p className="text-center">Discover my work and connect with me</p>
                 </Col>
                 <ul className="socials-list">
-                    <li className="socials-item">
-                        <FontAwesomeIcon className="socials-icon" icon={faEnvelope} />
-                    </li>
-                    <li className="socials-item">
-                        <FontAwesomeIcon className="socials-icon" icon={faGithub} />
-                    </li>
-                    <li className="socials-item">
-                        <FontAwesomeIcon className="socials-icon" icon={faLinkedin} />
-                    </li>
-                    <li className="socials-item">
-                        <FontAwesomeIcon className="socials-icon" icon={faFacebook} />
-                    </li>
+                    <a>
+                        <li className="socials-item">
+                            <FontAwesomeIcon className="socials-icon" icon={faEnvelope} />
+                        </li>
+                    </a>
+                    <a href="https://github.com/bBravee">
+                        <li className="socials-item">
+                            <FontAwesomeIcon className="socials-icon" icon={faGithub} />
+                        </li>
+                    </a>
+                    <a>
+                        <li className="socials-item">
+                            <FontAwesomeIcon className="socials-icon" icon={faLinkedin} />
+                        </li>
+                    </a>
+                    <a>
+                        <li className="socials-item">
+                            <FontAwesomeIcon className="socials-icon" icon={faFacebook} />
+                        </li>
+                    </a>
                 </ul>
             </div>
         </>
