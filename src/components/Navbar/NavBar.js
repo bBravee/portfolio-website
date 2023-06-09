@@ -16,13 +16,13 @@ function NavBar() {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav>
                             <Link to="/">
-                                <Nav.Link className="nav-link" href="#home">Home</Nav.Link>
+                                <Nav.Link className="nav-link" href="#home">./Home</Nav.Link>
                             </Link>
                             <Link to="/projects">
-                                <Nav.Link className="nav-link" href="#features">Projects</Nav.Link>
+                                <Nav.Link className="nav-link" href="#features">./Projects</Nav.Link>
                             </Link>
-                            <Link>
-                                <Nav.Link className="nav-link" href="#pricing">Contact</Nav.Link>
+                            <Link to="/contact">
+                                <Nav.Link className="nav-link" href="#pricing">./Contact</Nav.Link>
                             </Link>
                         </Nav>
                     </Navbar.Collapse>
