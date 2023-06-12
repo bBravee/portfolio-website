@@ -3,6 +3,8 @@ import { useSpring, animated } from 'react-spring';
 
 import { useParams } from 'react-router-dom';
 
+import previewImg2 from '../../../assets/previewBig.jpg';
+
 import './ProjectItem.css';
 
 function ProjectItem({ imgUrl, title, description, height, projectsData }) {
@@ -13,7 +15,7 @@ function ProjectItem({ imgUrl, title, description, height, projectsData }) {
     });
 
     const containerStyles = {
-        backgroundImage: `url(${imgUrl})`,
+        backgroundImage: `url(${previewImg2})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
