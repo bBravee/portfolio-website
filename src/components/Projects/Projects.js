@@ -8,23 +8,32 @@ import "./Projects.css";
 function Projects({ projectsData }) {
     return (
         <Container fluid className="projects-wrapper">
+            <h1 className="projects-title">See my work</h1>
             <Row className="projects-main-row">
                 <Col sm={12} md={6}>
                     {projectsData[0].map((item) => (
-                        <Link to={`/projects/${item.id}`}>
-                            <ProjectItem 
-                                title={item.title} 
-                                description={item.description} 
-                                imgUrl={item.imgUrl} 
+                        <Link to={`/projects/${item.id}`} style={{ textDecoration: 'none' }}>
+                            <ProjectItem
+                                title={item.title}
+                                shortDescription={item.shortDescription}
+                                badges={item.badges}
+                                imgUrl={item.imgUrl}
                                 height={item.height}
-                                projectsData={projectsData}
-                             />
+                            />
                         </Link>
                     ))}
                 </Col>
                 <Col sm={12} md={6}>
                     {projectsData[1].map((item) => (
-                        <ProjectItem title={item.title} description={item.description} imgUrl={item.imgUrl} height={item.height} />
+                        <Link to={`/projects/${item.id}`} style={{ textDecoration: 'none' }}>
+                            <ProjectItem 
+                                title={item.title}
+                                shortDescription={item.shortDescription} 
+                                badges={item.badges}
+                                imgUrl={item.imgUrl} 
+                                height={item.height} 
+                            />
+                        </Link>
                     ))}
                 </Col>
             </Row>

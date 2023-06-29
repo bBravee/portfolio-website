@@ -11,6 +11,9 @@ import Projects from './components/Projects/Projects';
 import ProjectDetails from './components/Projects/ProjectDetails/ProjectDetails';
 import Contact from './components/Contact/Contact';
 
+import weatherAppImg from './assets/weatherAppPreview.jpg';
+import workoutAppImg from './assets/workoutAppPreview.png'
+
 function App() {
 
   const projectsData = [
@@ -18,62 +21,32 @@ function App() {
         {
             id: 0,
             title: "Weather App",
+            shortDescription: "Check current weather in choosen city",
             description: "WeatherApp is an application that allows you to check current weather with many details in choosen city. Using Weather app you can also check the 5-day weather forecast for any city that you serached for.",
             badges: [
-                "react",
-                "axios",
-                "api"
+                "React",
+                "Bootstrap",
+                "Axios",
+                "Api"
             ],
-            imgUrl: "https://images.unsplash.com/photo-1682685795557-976f03aca7b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
+            imgUrl: weatherAppImg,
+            repoUrl: "https://github.com/bBravee/weather-app-react",
             height: 400
-        },
-        {
-            id: 1,
-            title: "Workout App",
-            description: "An application that aims to help people with their training.",
-            badges: [
-                "react-native",
-                "expo",
-                "api"
-            ],
-            imgUrl: "https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1642&q=80",
-            height: 300
         },
     ],
     [
         {   id: 2,
             title: "Workout App",
-            description: "An application that aims to help people with their training.",
+            shortDescription: "App that improves your training routine",
+            description: "Workout-app is a mobile application built with React Native that aims to help people with their training routines. The app allows users to choose a body part they want to train, select from a list of exercises generated based on the chosen body part, filter exercises by difficulty, add exercises to their favorites, and view complete instructions on how to perform the selected exercise",
             badges: [
-                "react-native",
-                "expo",
-                "api"
+                "React-native",
+                "Expo",
+                "Api"
             ],
-            imgUrl: "https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1642&q=80",
+            imgUrl: workoutAppImg,
+            repoUrl: "https://github.com/bBravee/workout-app",
             height: 300
-        },
-        {
-            id: 3,
-            title: "Weather App",
-            description: "An application that allows you to check the current weather.",
-            badges: [
-                "react",
-                "axios",
-                "api"
-            ],
-            imgUrl: "https://images.unsplash.com/photo-1682685795557-976f03aca7b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
-            height: 380
-        },
-        {   id: 4,
-            title: "Workout App",
-            description: "An application that aims to help people with their training.",
-            badges: [
-                "react-native",
-                "expo",
-                "api"
-            ],
-            imgUrl: "https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1642&q=80",
-            height: 360
         },
     ]
 ];

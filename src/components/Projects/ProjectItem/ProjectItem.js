@@ -1,13 +1,9 @@
-import { Col, Row, Container } from "react-bootstrap";
+import { Col, Row, Container, Badge } from "react-bootstrap";
 import { useSpring, animated } from 'react-spring';
-
-import { useParams } from 'react-router-dom';
-
-import previewImg2 from '../../../assets/previewBig.jpg';
 
 import './ProjectItem.css';
 
-function ProjectItem({ imgUrl, title, description, height, projectsData }) {
+function ProjectItem({ imgUrl, title, badges, shortDescription, height }) {
     const animation = useSpring({
         opacity: 1,
         from: { opacity: 0 },
@@ -15,7 +11,7 @@ function ProjectItem({ imgUrl, title, description, height, projectsData }) {
     });
 
     const containerStyles = {
-        backgroundImage: `url(${previewImg2})`,
+        backgroundImage: `url(${imgUrl})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
@@ -30,7 +26,12 @@ function ProjectItem({ imgUrl, title, description, height, projectsData }) {
                 <Row style={{ height: height }} className="project-item-row">
                     <Col lg={8} className="project-item-column">
                         <h1>{title}</h1>
-                        <p>{description}</p>
+                        <p>{shortDescription}</p>
+                        <div className="badges-container">
+                            {badges.map((item) => (
+                                <Badge pill bg="dark">{item}</Badge>
+                            ))}
+                        </div>
                     </Col>
                 </Row>
             </Container>

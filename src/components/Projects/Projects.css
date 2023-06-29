@@ -5,6 +5,13 @@
     align-items: center;
 }
 
+.projects-title {
+    padding-bottom: 3.4rem;
+    color: white;
+    font-size: clamp(3rem, 6.5vw, 3.5rem);
+    font-weight: bold;
+}
+
 .projects-main-row {
     width: 60rem;
 }

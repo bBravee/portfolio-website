@@ -41,10 +41,6 @@ footer {
     font-size: 1.4rem;
 }
 
-.footer-col-purple {
-    color: #50048f;
-}
-
 .footer-list {
     display: flex;
     flex-direction: row;
@@ -52,4 +48,13 @@ footer {
     gap: 1.3rem;
     margin-bottom: 0;
     padding-left: 0;
+    color: #50048f;
+}
+
+.footer-list a {
+    color: #50048f;
+}
+
+.footer-list a:hover {
+    color: white;
 }

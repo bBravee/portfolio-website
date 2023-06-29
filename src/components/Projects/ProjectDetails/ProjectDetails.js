@@ -2,7 +2,12 @@ import { useParams } from "react-router-dom";
 import { Button, Image } from "react-bootstrap";
 import { useSpring, animated } from 'react-spring';
 
-import previewImg2 from '../../../assets/previewBig.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
+import Atropos from 'atropos/react';
+
+import jsImage from '../../../assets/gradient.jpg';
 
 import "./ProjectDetails.css";
 
@@ -14,33 +19,44 @@ function ProjectDetails({ projectsData }) {
     });
 
     const headerAnimation = useSpring({
-        from: { transform: 'translateX(-800px)', opacity: 0, scale: 0},
+        from: { transform: 'translateX(-800px)', opacity: 0, scale: 0 },
         to: { transform: 'translateX(0)', opacity: 1, scale: 1 },
         config: { duration: 500 },
     });
 
     const { id } = useParams();
 
-    const project = projectsData[0].find((item) => item.id === (parseInt(id)));
+    let project = projectsData[0].find((item) => item.id === (parseInt(id)));
+
+    if (!project) {
+        project = projectsData[1].find((item) => item.id === (parseInt(id)));
+    }
 
     console.log(project);
 
     return (
         <div className="project-details-wrapper">
+            <animated.h1 style={headerAnimation}>
+                <h1 className="project-details-title">{project.title}</h1>
+            </animated.h1>
             <animated.div style={animation}>
-                <Image rounded src={previewImg2} className="project-details-image" alt="project-preview" />
+                <Image rounded src={project.imgUrl} className="project-details-image" alt="project-preview" />
             </animated.div>
             <div className="d-flex flex-column justify-content-center align-items-center">
-                <animated.h1 style={headerAnimation}>
-                    <h1 className="project-details-title">{project.title}</h1>
-                </animated.h1>
                 <div className="project-details-description">
+                    <h1 className="project-details-subtitle">About project</h1>
                     <p>{project.description}</p>
                 </div>
+                <div className="project-details-description">
+                    <h1 className="project-details-subtitle" >Technologies</h1>
+                   
+                </div>
                 <div className="d-flex justify-content-center flex-row pt-5">
-                    <Button className="pd-button" size="lg">Github</Button>
-                    <span className="mx-3"></span>
-                    <Button className="pd-button" size="lg">Preview</Button>
+                    <a href={project.repoUrl}>
+                        <Button className="pd-button" size="lg"> <FontAwesomeIcon className="socials-icon" icon={faGithub} /> Github</Button>
+                    </a>
+                    {/* <span className="mx-3"></span> */}
+                    {/* <Button className="pd-button" size="lg">Preview</Button> */}
                 </div>
             </div>
         </div>

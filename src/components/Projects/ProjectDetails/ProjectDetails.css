@@ -47,11 +47,30 @@
     color: white;
     font-size: clamp(2.5rem, 6.5vw, 3rem);
     font-weight: bold;
+    text-align: center;
 }
 
 .project-details-description {
     width: 80%;
+    text-align: left;
 }
+
+.project-details-subtitle {
+    padding-top: 8rem;
+    color: white;
+    font-size: clamp(2rem, 6.5vw, 2.5rem);
+    font-weight: bold;
+    text-align: left;
+}
+
+.my-atropos {
+    width: 180px;
+    height: 180px;
+    background-color: blue;
+    border: 3px solid #50048f;
+    background-position: center;
+    background-size: cover;
+  }
 
 @media (min-width: 930px) {
     .project-details-description {

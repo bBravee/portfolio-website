@@ -13,19 +13,22 @@ function Footer() {
         <footer>
             <Container>
                 <Row className="footer-row">
-                    <Col className="footer-col footer-col-purple col-md-4">
+                    <Col className="footer-col col-md-4">
                         <ul className="footer-list">
                             <li>
-                                <FontAwesomeIcon className="socials-icon" icon={faEnvelope} />
+                                <a href="mailto:jakub.kusmierczyk@op.pl">
+                                    <FontAwesomeIcon className="socials-icon" icon={faEnvelope} />
+                                </a>
                             </li>
                             <li>
-                                <FontAwesomeIcon className="socials-icon" icon={faGithub} />
+                                <a href="https://github.com/bBravee">
+                                    <FontAwesomeIcon className="socials-icon" icon={faGithub} />
+                                </a>
                             </li>
                             <li>
-                                <FontAwesomeIcon className="socials-icon" icon={faLinkedin} />
-                            </li>
-                            <li>
-                                <FontAwesomeIcon className="socials-icon" icon={faFacebook} />
+                                <a href="https://linkedin.com/in/kuba-kuśmierczyk-454581242">
+                                    <FontAwesomeIcon className="socials-icon" icon={faLinkedin} />
+                                </a>
                             </li>
                         </ul>
                     </Col>

@@ -4,7 +4,7 @@ import programmerImage from "../../assets/ProgrammerBig.png";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import "./Home.css";
 
@@ -48,7 +48,7 @@ function Home() {
                     <p className="text-center">Discover my work and connect with me</p>
                 </Col>
                 <ul className="socials-list">
-                    <a>
+                    <a href="mailto:jakub.kusmierczyk@op.pl">
                         <li className="socials-item">
                             <FontAwesomeIcon className="socials-icon" icon={faEnvelope} />
                         </li>
@@ -58,14 +58,9 @@ function Home() {
                             <FontAwesomeIcon className="socials-icon" icon={faGithub} />
                         </li>
                     </a>
-                    <a>
+                    <a href="https://linkedin.com/in/kuba-kuśmierczyk-454581242">
                         <li className="socials-item">
                             <FontAwesomeIcon className="socials-icon" icon={faLinkedin} />
-                        </li>
-                    </a>
-                    <a>
-                        <li className="socials-item">
-                            <FontAwesomeIcon className="socials-icon" icon={faFacebook} />
                         </li>
                     </a>
                 </ul>
