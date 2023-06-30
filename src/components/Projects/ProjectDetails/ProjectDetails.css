@@ -63,15 +63,6 @@
     text-align: left;
 }
 
-.my-atropos {
-    width: 180px;
-    height: 180px;
-    background-color: blue;
-    border: 3px solid #50048f;
-    background-position: center;
-    background-size: cover;
-  }
-
 @media (min-width: 930px) {
     .project-details-description {
         width: 50%;

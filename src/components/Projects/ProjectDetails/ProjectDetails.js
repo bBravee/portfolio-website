@@ -5,11 +5,8 @@ import { useSpring, animated } from 'react-spring';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-import Atropos from 'atropos/react';
-
-import jsImage from '../../../assets/gradient.jpg';
-
 import "./ProjectDetails.css";
+import BadgesContainer from "./BadgesContainer";
 
 function ProjectDetails({ projectsData }) {
     const animation = useSpring({
@@ -23,6 +20,12 @@ function ProjectDetails({ projectsData }) {
         to: { transform: 'translateX(0)', opacity: 1, scale: 1 },
         config: { duration: 500 },
     });
+
+    const badgeStyles = {
+        padding: '1rem 1.5rem',
+        margin: '2rem 0',
+        fontSize: '16px',
+    }
 
     const { id } = useParams();
 
@@ -49,7 +52,10 @@ function ProjectDetails({ projectsData }) {
                 </div>
                 <div className="project-details-description">
                     <h1 className="project-details-subtitle" >Technologies</h1>
-                   
+                    <BadgesContainer 
+                        badges={project.badges} 
+                        badgeStyles={badgeStyles}
+                    />
                 </div>
                 <div className="d-flex justify-content-center flex-row pt-5">
                     <a href={project.repoUrl}>

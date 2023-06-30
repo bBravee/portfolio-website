@@ -58,20 +58,9 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-.badges-container {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-start;
-}
-
 .project-item-badge {
     background-color: cadetblue;
 }
 
-.badge {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 5px 12px;
-}
+
 

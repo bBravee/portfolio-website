@@ -3,6 +3,8 @@ import { useSpring, animated } from 'react-spring';
 
 import './ProjectItem.css';
 
+import BadgesContainer from "../ProjectDetails/BadgesContainer";
+
 function ProjectItem({ imgUrl, title, badges, shortDescription, height }) {
     const animation = useSpring({
         opacity: 1,
@@ -27,11 +29,7 @@ function ProjectItem({ imgUrl, title, badges, shortDescription, height }) {
                     <Col lg={8} className="project-item-column">
                         <h1>{title}</h1>
                         <p>{shortDescription}</p>
-                        <div className="badges-container">
-                            {badges.map((item) => (
-                                <Badge pill bg="dark">{item}</Badge>
-                            ))}
-                        </div>
+                        <BadgesContainer badges={badges}/>
                     </Col>
                 </Row>
             </Container>
