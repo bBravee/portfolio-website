@@ -1,13 +1,27 @@
 .badges-container {
+    margin: 0;
+    padding: 0;
+}
+
+.badges-row {
     display: flex;
-    gap: 1.5rem;
     justify-content: flex-start;
+    gap: 0.4rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .badges-row {
+        justify-content: center;
+    }
 }
 
 .badge {
+    display: flex;
+    justify-content: center;
+    width: 6.8rem;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
-    padding: 5px 12px;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }

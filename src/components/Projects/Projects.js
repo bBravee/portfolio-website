@@ -17,7 +17,7 @@ function Projects({ projectsData }) {
                                 title={item.title}
                                 shortDescription={item.shortDescription}
                                 badges={item.badges}
-                                imgUrl={item.imgUrl}
+                                imgUrl={item.imgUrl[0]}
                                 height={item.height}
                             />
                         </Link>
@@ -30,7 +30,7 @@ function Projects({ projectsData }) {
                                 title={item.title}
                                 shortDescription={item.shortDescription} 
                                 badges={item.badges}
-                                imgUrl={item.imgUrl} 
+                                imgUrl={item.imgUrl[0]} 
                                 height={item.height} 
                             />
                         </Link>
