@@ -70,7 +70,6 @@ p {
 .introduce-wrapper>h1 {
     color: #50048f;
     font-weight: bold;
-    /* font-size: 4rem; */
     font-size: clamp(2.6rem, 6.5vw, 4rem);
     margin-bottom: 2.8rem;
 }
@@ -80,7 +79,6 @@ p {
 }
 
 .description-container {
-    /* width: 35% !important; */
     display: flex;
     justify-content: center;
     text-align: center;

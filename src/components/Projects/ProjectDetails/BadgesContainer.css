@@ -16,6 +16,16 @@
     }
 }
 
+@media (max-width: 576px) {
+    .badges-column{
+        display: flex;
+        justify-content: center;
+        flex: 0 0 auto;
+        width: 35%;
+    }
+}
+
+
 .badge {
     display: flex;
     justify-content: center;

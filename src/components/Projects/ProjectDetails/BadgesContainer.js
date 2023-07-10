@@ -17,7 +17,6 @@ function BadgesContainer({ badges, badgeStyles }) {
     };
 
     const badgeHoverStyles = {
-        // scale: '1.2',
         transform: 'translateY(-0.25em)',
         boxShadow: '0 8px 10px -2px #9900F0',
     }
@@ -28,7 +27,7 @@ function BadgesContainer({ badges, badgeStyles }) {
         <Container className="badges-container">
             <Row className="badges-row">
                 {badges.map((item, index) => (
-                    <Col xs={6} sm={3} md={2} lg={4} xl={3} xxl={3}>
+                    <Col className="badges-column" sm={3} md={2} lg={4} xl={3} xxl={3}>
                         <Badge
                             key={item.id}
                             pill

@@ -67,29 +67,13 @@ function ProjectDetails({ projectsData }) {
                             <Image rounded src={project.imgUrl[1]} className="project-details-image" alt="project-preview" />
                         </animated.div>
                     </Col>
-
                 </Row>
             </Container>
-            {/* <div className="pd-first-section">
-                <div className="project-details-description">
-
-                </div>
-            </div> */}
             <div className="d-flex flex-column justify-content-center align-items-center">
-
-                {/* <div className="project-details-description">
-                    <h1 className="project-details-subtitle" >Technologies</h1>
-                    <BadgesContainer
-                        badges={project.badges}
-                        badgeStyles={badgeStyles}
-                    />
-                </div> */}
                 <div className="d-flex justify-content-center flex-row pt-5">
                     <a href={project.repoUrl}>
                         <Button className="pd-button" size="lg"> <FontAwesomeIcon className="socials-icon" icon={faGithub} /> Github</Button>
                     </a>
-                    {/* <span className="mx-3"></span> */}
-                    {/* <Button className="pd-button" size="lg">Preview</Button> */}
                 </div>
             </div>
         </div>
