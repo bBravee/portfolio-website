@@ -1,4 +1,4 @@
-import { Col, Row, Container, Badge } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import { useSpring, animated } from 'react-spring';
 
 import './ProjectItem.css';
@@ -21,6 +21,10 @@ function ProjectItem({ imgUrl, title, badges, shortDescription, height }) {
         boxShadow: '0 4 30 rgba(0, 0, 0, 0.1)',
     };
 
+    const justifyBadge = {
+        justifyContent: 'flex-start'
+    };
+
     return (
         <animated.div style={animation}>
             <Container style={containerStyles} className="project-container">
@@ -29,7 +33,7 @@ function ProjectItem({ imgUrl, title, badges, shortDescription, height }) {
                     <Col lg={8} className="project-item-column">
                         <h1>{title}</h1>
                         <p>{shortDescription}</p>
-                        <BadgesContainer badges={badges}/>
+                        <BadgesContainer badges={badges} justify={justifyBadge} />
                     </Col>
                 </Row>
             </Container>

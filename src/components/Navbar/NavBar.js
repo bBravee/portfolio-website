@@ -11,17 +11,19 @@ function NavBar() {
         <>
             <Navbar className="navbar-wrapper fixed-top" collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">{brand}</Navbar.Brand>
+                    <Link to="/" style={{ textDecoration: 'none' }}>
+                        <Navbar.Brand href="#home">{brand}</Navbar.Brand>
+                    </Link>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav>
-                            <Link to="/">
+                            <Link to="/" style={{ textDecoration: 'none' }}>
                                 <Nav.Link className="nav-link" href="#home">./Home</Nav.Link>
                             </Link>
-                            <Link to="/projects">
+                            <Link to="/projects" style={{ textDecoration: 'none' }}>
                                 <Nav.Link className="nav-link" href="#features">./Projects</Nav.Link>
                             </Link>
-                            <Link to="/contact">
+                            <Link to="/contact" style={{ textDecoration: 'none' }}>
                                 <Nav.Link className="nav-link" href="#pricing">./Contact</Nav.Link>
                             </Link>
                         </Nav>

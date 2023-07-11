@@ -31,9 +31,6 @@ function App() {
           "Bootstrap",
           "Axios",
           "Api",
-          "Tailwind",
-          "Svelte",
-          "Angular"
         ],
         imgUrl: [
           weatherAppImg,

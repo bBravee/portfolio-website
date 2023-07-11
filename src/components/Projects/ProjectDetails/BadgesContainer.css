@@ -1,35 +1,22 @@
 .badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    gap: .8rem;
     margin: 0;
     padding: 0;
 }
 
-.badges-row {
-    display: flex;
-    justify-content: flex-start;
-    gap: 0.4rem;
-    margin: 0;
-}
-
 @media (max-width: 768px) {
-    .badges-row {
+    .badges-container {
         justify-content: center;
     }
 }
-
-@media (max-width: 576px) {
-    .badges-column{
-        display: flex;
-        justify-content: center;
-        flex: 0 0 auto;
-        width: 35%;
-    }
-}
-
 
 .badge {
     display: flex;
     justify-content: center;
-    width: 6.8rem;
+    padding: .5rem 1.5rem;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;

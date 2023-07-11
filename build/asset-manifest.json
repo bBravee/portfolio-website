@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c0b25fe.css",
-    "main.js": "/static/js/main.ca33413d.js",
+    "main.css": "/static/css/main.0bc2cc5f.css",
+    "main.js": "/static/js/main.e9b5f0ba.js",
     "static/js/787.749b4a44.chunk.js": "/static/js/787.749b4a44.chunk.js",
     "static/media/workoutAppImg.png": "/static/media/workoutAppImg.966558c985a1f8f5598a.png",
     "static/media/workoutAppImg2.png": "/static/media/workoutAppImg2.15a8c92b47cdf6952610.png",
@@ -9,12 +9,12 @@
     "static/media/weatherAppPreview2.jpg": "/static/media/weatherAppPreview2.728b3395625aca573416.jpg",
     "static/media/ProgrammerBig.png": "/static/media/ProgrammerBig.fa0bb226d4bf848620c2.png",
     "index.html": "/index.html",
-    "main.8c0b25fe.css.map": "/static/css/main.8c0b25fe.css.map",
-    "main.ca33413d.js.map": "/static/js/main.ca33413d.js.map",
+    "main.0bc2cc5f.css.map": "/static/css/main.0bc2cc5f.css.map",
+    "main.e9b5f0ba.js.map": "/static/js/main.e9b5f0ba.js.map",
     "787.749b4a44.chunk.js.map": "/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c0b25fe.css",
-    "static/js/main.ca33413d.js"
+    "static/css/main.0bc2cc5f.css",
+    "static/js/main.e9b5f0ba.js"
   ]
 }

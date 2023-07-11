@@ -4,13 +4,24 @@
     margin-bottom: 1rem;
 }
 
-.project-container:hover > .overlay {
+.project-container:hover>.overlay {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .project-container:hover .project-item-column {
     transform: translateY(-10%);
-    opacity: 0.8;    
+    opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+    .project-item-column {
+        transform: translateY(-10%);
+        opacity: 0.8 !important;
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+    }
 }
 
 .projects-image {
@@ -61,6 +72,3 @@
 .project-item-badge {
     background-color: cadetblue;
 }
-
-
-

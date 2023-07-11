@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
+
 html,
 body,
 #root {
@@ -7,7 +9,7 @@ body,
     padding: 0;
     text-align: center;
     background: linear-gradient(90deg, rgba(14, 18, 18, 1) 0%, rgba(0, 0, 0, 1) 27%, rgba(2, 0, 3, 1) 36%, rgba(63, 0, 113, 1));
-
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .App {
